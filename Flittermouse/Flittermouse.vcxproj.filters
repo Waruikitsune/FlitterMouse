@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Flittermouse">
+      <UniqueIdentifier>{285371ED-14B6-0092-BD3B-3948A97DCC14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flittermouse\Events">
+      <UniqueIdentifier>{0CE21452-7843-F25F-01B1-38126D11291F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Flittermouse.h" />
+    <ClInclude Include="source\Flittermouse\ApplicationBase.h">
+      <Filter>Flittermouse</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\EngineBase.h">
+      <Filter>Flittermouse</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\EntryPoint.h">
+      <Filter>Flittermouse</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\Events\BaseEvent.h">
+      <Filter>Flittermouse\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\Log.h">
+      <Filter>Flittermouse</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Flittermouse\ApplicationBase.cpp">
+      <Filter>Flittermouse</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Flittermouse\Log.cpp">
+      <Filter>Flittermouse</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

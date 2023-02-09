@@ -1,0 +1,10 @@
+#dirs
+
+.vs
+bin
+bin-int
+
+#files
+
+*.user
+cmd.exe
