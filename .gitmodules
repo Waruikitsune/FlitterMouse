@@ -1,0 +1,3 @@
+[submodule "Flittermouse/lib/spdlog"]
+	path = Flittermouse/lib/spdlog
+	url = https://github.com/gabime/spdlog
