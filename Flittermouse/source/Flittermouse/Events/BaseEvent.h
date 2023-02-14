@@ -16,7 +16,8 @@ namespace FM {
 			WindowClosed, WindowResized, WindowGotFocus, WindowLostFocus, WindowMoved,
 			EngineTick, EngineUpdate, EngineRender,
 			KeyPressed, KeyReleased,
-			MouseButtonPressed, MouseButtonRelease, MouseMoved, MouseScrolled
+			MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled,
+			ControllerAxisMoved, ControllerButtonPressed, ControllerButtonReleased
 		};
 
 		enum EventCategory : unsigned char {
@@ -26,13 +27,14 @@ namespace FM {
 			KeyboardInput		= 1 << 2,
 			MouseButtonInput	= 1 << 3,
 			EngineInternal		= 1 << 4,
-			Window				= 1 << 5
+			Window				= 1 << 5,
+			Controller			= 1 << 6,
+			ControllerButton	= 1 << 7,
 		};
 
 		inline virtual EventType GetEventType() const = 0;
 		inline virtual EventCategory GetEventCategory() const = 0;
 		inline bool IsinCategory(EventCategory c) { return c & GetEventCategory(); }
-
 
 		#ifdef FM_DEBUG
 		virtual const char* GetName() const = 0;

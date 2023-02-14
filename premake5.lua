@@ -11,7 +11,7 @@ location "Flittermouse"
 	language "C++"
 
 	files {"%{prj.name}/source/**.h", "%{prj.name}/source/**.cpp"}
-	includedirs {"%{prj.name}/externalLibs/spdlog/include", "%{prj.name}/source"}
+	includedirs {"%{prj.name}/lib/spdlog/include", "%{prj.name}/source"}
 
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
@@ -51,7 +51,7 @@ location "Training"
 
 	files {"%{prj.name}/source/**.h", "%{prj.name}/source/**.cpp"}
 	includedirs {
-			"FlitterMouse/externalLibs/spdlog/include",
+			"FlitterMouse/lib/spdlog/include",
 			"Flittermouse/source"
 	}
 
