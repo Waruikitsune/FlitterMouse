@@ -1,5 +1,8 @@
 #pragma once
 #include "EngineBase.h"
+#include "Events/BaseEvent.h"
+#include "Events/ApplicationEvent.h"
+
 
 namespace FM {
 
@@ -12,13 +15,15 @@ namespace FM {
 
 		void Run();
 
-		virtual const char* ApplicationName() = 0;
+		virtual const std::string& ApplicationName() = 0;
 
-		//private:
+		private:
+
 	};
 
 
 	//to be implemented by client applications for the engine:
 	extern ApplicationBase* CreateApplication();
+	extern std::string& ApplicationName();
 
 }

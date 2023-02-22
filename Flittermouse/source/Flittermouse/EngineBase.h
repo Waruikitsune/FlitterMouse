@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 #ifdef FM_PLATFORM_WINDOWS
 	#ifdef FM_BUILD_DLL

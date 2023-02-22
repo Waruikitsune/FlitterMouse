@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flittermouse", "Flittermouse\Flittermouse.vcxproj", "{285371ED-14B6-0092-BD3B-3948A97DCC14}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Training", "Training\Training.vcxproj", "{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flittermouse", "Flittermouse\Flittermouse.vcxproj", "{285371ED-14B6-0092-BD3B-3948A97DCC14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,18 +12,18 @@ Global
 		Perf|x64 = Perf|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Debug|x64.ActiveCfg = Debug|x64
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Debug|x64.Build.0 = Debug|x64
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Dist|x64.ActiveCfg = Dist|x64
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Dist|x64.Build.0 = Dist|x64
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Perf|x64.ActiveCfg = Perf|x64
-		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Perf|x64.Build.0 = Perf|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Debug|x64.ActiveCfg = Debug|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Debug|x64.Build.0 = Debug|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Dist|x64.ActiveCfg = Dist|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Dist|x64.Build.0 = Dist|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Perf|x64.ActiveCfg = Perf|x64
 		{A1C2AA32-8D8F-053E-B6A8-F3E5A2D43ACC}.Perf|x64.Build.0 = Perf|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Debug|x64.ActiveCfg = Debug|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Debug|x64.Build.0 = Debug|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Dist|x64.ActiveCfg = Dist|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Dist|x64.Build.0 = Dist|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Perf|x64.ActiveCfg = Perf|x64
+		{285371ED-14B6-0092-BD3B-3948A97DCC14}.Perf|x64.Build.0 = Perf|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

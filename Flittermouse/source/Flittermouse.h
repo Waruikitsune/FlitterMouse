@@ -4,7 +4,7 @@
 
 #include "Flittermouse/ApplicationBase.h"
 //#include "Flittermouse/EngineBase.h"
-#include "Flittermouse/Log.h"
+#include "Flittermouse/Log/Log.h"
 
 
 #include "Flittermouse/EntryPoint.h"

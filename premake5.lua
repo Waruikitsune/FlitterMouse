@@ -1,7 +1,7 @@
 workspace "Flittermouse"
 	configurations {"Debug", "Perf", "Dist"}
 	architecture "x64"
-
+	startproject "Training"
 
 outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
@@ -9,12 +9,21 @@ project "Flittermouse"
 location "Flittermouse"
 	kind "SharedLib"
 	language "C++"
+	
+	externalanglebrackets "on"
+	externalwarnings "off"
+
+	pchheader "FM_pch.h"
+	pchsource "Flittermouse/source/FM_pch.cpp"
 
 	files {"%{prj.name}/source/**.h", "%{prj.name}/source/**.cpp"}
 	includedirs {"%{prj.name}/lib/spdlog/include", "%{prj.name}/source"}
 
+
+
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
+
 
 	filter {"system:windows"}
 		cppdialect "c++17"
@@ -48,6 +57,9 @@ project "Training"
 location "Training"
 	kind "ConsoleApp"
 	language "C++"
+
+	externalanglebrackets "on"
+	externalwarnings "off"
 
 	files {"%{prj.name}/source/**.h", "%{prj.name}/source/**.cpp"}
 	includedirs {

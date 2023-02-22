@@ -7,8 +7,12 @@
     <Filter Include="Flittermouse\Events">
       <UniqueIdentifier>{0CE21452-7843-F25F-01B1-38126D11291F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Flittermouse\Log">
+      <UniqueIdentifier>{F9BED11E-E5B7-F070-0EEA-D5F5FA41D07C}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\FM_pch.h" />
     <ClInclude Include="source\Flittermouse.h" />
     <ClInclude Include="source\Flittermouse\ApplicationBase.h">
       <Filter>Flittermouse</Filter>
@@ -19,19 +23,29 @@
     <ClInclude Include="source\Flittermouse\EntryPoint.h">
       <Filter>Flittermouse</Filter>
     </ClInclude>
+    <ClInclude Include="source\Flittermouse\Events\ApplicationEvent.h">
+      <Filter>Flittermouse\Events</Filter>
+    </ClInclude>
     <ClInclude Include="source\Flittermouse\Events\BaseEvent.h">
       <Filter>Flittermouse\Events</Filter>
     </ClInclude>
-    <ClInclude Include="source\Flittermouse\Log.h">
-      <Filter>Flittermouse</Filter>
+    <ClInclude Include="source\Flittermouse\Events\KeyEvent.h">
+      <Filter>Flittermouse\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\Events\MouseEvent.h">
+      <Filter>Flittermouse\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Flittermouse\Log\Log.h">
+      <Filter>Flittermouse\Log</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\FM_pch.cpp" />
     <ClCompile Include="source\Flittermouse\ApplicationBase.cpp">
       <Filter>Flittermouse</Filter>
     </ClCompile>
-    <ClCompile Include="source\Flittermouse\Log.cpp">
-      <Filter>Flittermouse</Filter>
+    <ClCompile Include="source\Flittermouse\Log\Log.cpp">
+      <Filter>Flittermouse\Log</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
